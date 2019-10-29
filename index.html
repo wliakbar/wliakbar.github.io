@@ -1,43 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
 
-
-<html>
-
-  <body>
-    <img src= "0.jpeg"/>
-    <h1>Wli Akbar</h1>
+  	<link rel="stylesheet" type="text/css" href="style.css">
     
-    <h2>About Me</h2>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
 
-    <p>A dedicated, creative and self-driven Computer Engineering student with 1+ years of software development experience. 
-      Aspiring to engineer efficient and reliable software for leading firms. Eager to apply proven skills in C++, Python 
-      and Java and also learn new skills in order grow as an engineer and as an individual to advance his passion for coding.
-      </p>
-   
-      <h2>Projects</h2>
+    .circular--square {
+  border-radius: 50%;
+}
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Wli H. Akbar</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
         
-        <p> ShopBuddy: Created an Android application using Java and Android Studio; the application allowed the user to create 
-          a shopping list and saved the lists/changes in the shared preferences of the phone. The app used android notification 
-          services to send notifications such as budget warnings and special notes. (May 2019) </p>
-    <img src="Screen Shot 2019-05-06 at 2.10.31 PM.png"/>
-        
-         <p> Circuit Board Testing Terminal: Collaborated with electrical engineers to learn more about different types of circuit 
-           boards and their functionalities. Then designed a C# graphic user interface that would EPROM chips and serial port 
-           communication to run more than 80 tests on 15 boards.(May 2019) </p>
-        
-        <p> Chained Hash-Table: Implemented the data structure of a chained hashtable in C++; however, the chains converted from 
-          link list to binary search trees when the data entries collided exceedingly to promote efficiency. (July 2018)
-         </p>
-        
-         <h2>Interests</h2>
-        <p> I enjoy playing and watching basketball and football. I also enjoy playing chess. Aside from sports I like to read many
-          technology maganzines to stay informed about any advancements in my feild of study
-      </p>
-      
-      <h2>LinkedIn</h2>
+        <li><a href="#experience">Experiences</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#achievments">Achievments</a></li>
+        <li><a href="WliAkbarResume.pdf">Resume</a></li>
+
+      </ul>
      
-      <a href="https://www.linkedin.com/in/wli-akbar/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <div class="row">
+  <div class="col-sm-3">
+    <img class="circular--square" src="0.jpeg" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-9">
+    <h1>Wli H. Akbar</h1>      
+    <p>A dedicated, creative and self-driven Computer Engineering student with 2+ years of software development experience. Aspiring to engineer efficient and reliable software for leading firms. Eager to apply proven skills in software development and also learn new skills in order grow as an engineer and as an individual to advance his passion for coding.</p>
+  </div>
+
+  </div>  
+</div>
+
+
+
+   
+</div>
+  
+
+  <a name="experiences"></a>
+<div class="container-fluid bg-3 text-center">    
+  <h2>Some of my Experiences</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="circular--square" src="nfl.jpg" class="img-responsive" style="width:80%"  alt="Image">
+      <h3>Software Engineering Intern</h3>
+      <p>My main project during my internship was to create a desktop application which would recognize when a player gets injured during a game in real time. The application would then convert that video clip(s) and make it/them easily accesible for doctors.</p>
+
+    </div>
+    <div class="col-sm-4"> 
+      <img class="circular--square" src="mta2.jpg" class="img-responsive" style="width:80%" height="250" alt="Image">
+      <h3>Engineering Support Aide</h3>
+       <p>My main projects during my internship were to create multiple graphical user interfaces that would run a series of tests on numerous circuit boards and embedded systems.</p>
+      
+
+     
+    </div>
+    <div class="col-sm-4"> 
+    	<img class="circular--square" src="ctp.jpg" class="img-responsive" style="width:80%" height="250" alt="Image">
+    	 <h3>Student Software Developer</h3>
+      <p>Full stack JavaScript training program where I learn in-demand technologies like React, Node + Express, and PostgreSQL as well as industry best practices for design, implementation, and deployment</p>
+      
+    </div>
+    
+  </div>
+</div><br>
+
+<p></p>
+<p></p>
+<br>
+
+<a name="projects"></a>
+<div class="container-fluid bg-3 text-center">  
+<h2>Some of my Projects</h2><br>  
+  <div class="row">
+    <div class="col-sm-3">
+      <img class="circular--square" src="shop.jpeg" class="img-responsive" style="width:80%" height="235" alt="Image">
+      <h3>ShopBuddy</h3>
+      <p>Created an Android application using Java and Android Studio; the application allowed the user to create a shopping list and saved the lists/changes in the shared preferences of the phone. The app used android notification services to send notifications such as budget warnings and special notes.</p>
+
+      <a href="https://github.com/wliakbar/ShopBuddy">View Project</a>
+
+
+    </div>
+    <div class="col-sm-3"> 
+    	<img class="circular--square" src="board.jpg" class="img-responsive" style="width:80%" height="235" alt="Image">
+    	<h3>Circuit Board Testing</h3>
+      <p>Collaborated with electrical engineers to learn more about different types of circuit boards and their functionalities. Then designed a C# graphic user interface that would EPROM chips and serial port communication to run more than 80 tests on 15 boards</p>
+
+
+      
+    </div>
+    <div class="col-sm-3"> 
+    	<img class="circular--square" src="fish.jpg" class="img-responsive" style="width:80%" height="235" alt="Image">
+    	<h3>Hey that's my Fish</h3>
+      <p>Implemneted a console version of the classic board game using C++. The user plays against the computer and the computer makes its moves intelligently to make game more challenging.</p>
+
+      <a href="https://github.com/wliakbar/Projects/blob/master/Akbar6.cpp">View Project</a>
+      
+    </div>
+    <div class="col-sm-3">
+    	<img class="circular--square" src="hash.jpg" class="img-responsive" style="width:80%" height="235" alt="Image">
+    	<h3>Chained Hash Table</h3>
+      <p>Implemented the data structure of a chained hashtable in C++; however, the chains converted from link list to binary search trees when the data entries collided exceedingly to promote efficiency.</p>
+
+      <a href="https://github.com/wliakbar/Data-Structures/tree/master/HashTable">View Project</a>
+      
+    </div>
+  </div>
+</div><br><br>
+
+
+<p></p>
+<p></p>
+<br>
+
+<a name="interests"></a>
+<div class="container-fluid bg-3 text-center">    
+  <h2>Some of my Interest</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="circular--square" src="golf.jpeg" class="img-responsive" style="width:80%"  height="315" alt="Image">
+      <h3>Golf</h3>
+      <p>I enjoy playing golf both competitively and for leisure. I was part of my high schools golf team where my team was the division champion and I was awarded the scholaraly athlete award.</p>
+
+    </div>
+    <div class="col-sm-4"> 
+      <img class="circular--square" src="bball.jpeg" class="img-responsive" style="width:80%" height="315" alt="Image">
+      <h3>Basketball</h3>
+       <p>Basketball has to be my favorite sport to play! Despite not being gifted with the ideal basketball player height, I have loved the game for its competitive yet friendly nature. Playing this sport has allowed me to realize that skills that one uses and learns on the court while playing can also be applied outside of the court.</p>
+      
+
+     
+    </div>
+    <div class="col-sm-4"> 
+    	<img class="circular--square" src="writing.jpg" class="img-responsive" style="width:80%" height="315" alt="Image">
+    	 <h3>Writing</h3>
+      <p>Writing is another activity that gives me a lot of joy. It can very well be argued that writining is a form of meditation as it empowers one to freely experess themselves. Part of my high schools writing club, my writing pieces were often published in the schools literary maganize. </p>
+      
+    </div>
+  
     
 
-  </body>
+  </div>
+</div><br>
+<br>
+<br>
+<br>
 
+<a name="achievments"></a>
+<div class="container-fluid bg-3 text-center">    
+  <h2>Some of my Achievments</h2><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="circular--square" src="mac.png" class="img-responsive" style="width:60%"  alt="Image">
+      <h3>Macaulay Honors College</h3>
+      <p>A highly selective college/program at CUNY which provides a full four year merit based scholarship, advismemnt/mentoring, opportunities fund and a laptop</p>
+      <a href="https://macaulay.cuny.edu/">Macaulay Honors College</a>
+
+    </div>
+    <div class="col-sm-6"> 
+      <img class="circular--square" src="me.png" class="img-responsive" style="width:60%"  alt="Image">
+      <h3>Salutatorian</h3>
+       <p>Graduated as the 2016 William Cullen Bryant High School salutatorian</p>
+      <a href="https://vimeo.com/173928633">My graduation speech</a>
+
+     
+    </div>
+
+  
+    
+
+  </div>
+</div><br>
+
+<br>
+<br>
+<br>
+
+
+<footer class="container-fluid text-center">
+ 
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="https://www.linkedin.com/in/wli-akbar"><img src="link.png" width="82" height="86"  alt="LinkedIn"></a>
+    </div>
+    <div class="col-sm-6"> 
+     <a href="https://github.com/wliakbar/"><img src="git.png" width="82" height="86"  alt="GitHub"></a>
+     
+    </div>
+
+
+
+
+  
+</footer>
+
+</body>
 </html>
